@@ -1,0 +1,11 @@
+<h1>Currency Pairs</h1>
+
+<ul>
+    <% @simb.each do |prin|%>
+      <%@lis = prin.at(1)%>
+      <%@cde = @lis.fetch("code")%>
+      <li>
+      <a href="/<%=@cde%>">convert 1 <%=@cde%> to...</a>
+      </li>
+    <%end%>
+</ul>

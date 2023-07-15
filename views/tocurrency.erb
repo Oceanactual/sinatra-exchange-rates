@@ -1,0 +1,12 @@
+<h1>Convert <%=@cde%> </h1>
+Go <a href="/">back</a>.
+
+<ul>
+    <% @simbtwo.each do |printwo|%>
+      <%@listwo = printwo.at(1)%>
+      <%@cdetwo = @listwo.fetch("code")%>
+      <li>
+      <a href="/<%=@cde%>/<%=@cdetwo%>">convert 1 <%=@cde%> to  <%=@cdetwo%>...</a>
+      </li>
+    <%end%>
+</ul>
